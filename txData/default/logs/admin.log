@@ -1,0 +1,10 @@
+
+================================================================
+======== txAdmin v6.0.2 atop fxserver 7290 Starting - 18/02/2024, 21:44:15
+================================================================
+[21:44:29][sugawy] created admins file
+[21:44:47][sugawy] Changing global settings via setup stepper and started Deployer.
+[21:44:52][sugawy] Setting recipe.
+[21:46:20][sugawy] Running recipe.
+[21:50:52][sugawy] Completed and committed server deploy.
+[21:53:24][sugawy] executed "STOP SERVER"
