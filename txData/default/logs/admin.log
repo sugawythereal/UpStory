@@ -8,3 +8,19 @@
 [21:46:20][sugawy] Running recipe.
 [21:50:52][sugawy] Completed and committed server deploy.
 [21:53:24][sugawy] executed "STOP SERVER"
+
+================================================================
+======== txAdmin v6.0.2 atop fxserver 7290 Starting - 18/02/2024, 22:04:00
+================================================================
+[22:06:58][sugawy] logged in from 127.0.0.1 via citizenfx
+[22:07:00][sugawy] executed "STOP SERVER"
+
+================================================================
+======== txAdmin v6.0.2 atop fxserver 7290 Starting - 18/02/2024, 22:54:15
+================================================================
+[22:56:11][sugawy] logged in via in-game ui
+[23:11:11][sugawy] logged in from 127.0.0.1 via citizenfx
+[23:11:12][sugawy] logged in via in-game ui
+[23:11:22][sugawy] executed "ensure "qb-mechanicjob""
+[23:15:26][sugawy] executed "ensure "ps-hud""
+[23:16:45][sugawy] executed "STOP SERVER"
