@@ -14,16 +14,16 @@
 ## You CAN edit the following:
 endpoint_add_tcp "0.0.0.0:30120"
 endpoint_add_udp "0.0.0.0:30120"
-sv_maxclients 48
-set steam_webApiKey "none"
+sv_maxclients 7
+set steam_webApiKey "890C0105332AE105887B8F7837E64D5D"
 sets tags "default, deployer, qbcore, qb-core"
 
 ## You MAY edit the following:
 sv_licenseKey "cfxk_MgGkxNzfr4HxeyPWg1nf_2TJwx8"
-sv_hostname "UpStory built with QBCore Framework by JericoFx & Kakarot & Hamy!"
-sets sv_projectName "[QBCore Framework] UpStory"
-sets sv_projectDesc "An advanced FiveM RP framework including jobs, gangs, housing & more!"
-sets locale "en-US"
+sv_hostname "UpStory built with <3 by sugaa"
+sets sv_projectName "[QB] UpStory"
+sets sv_projectDesc "UpStory built with <3 by sugaa"
+sets locale "pt-PT"
 load_server_icon myLogo.png
 set sv_enforceGameBuild 2944
 set mysql_connection_string "mysql://root:18112131@localhost/UpStoryDB?charset=utf8mb4"
@@ -37,10 +37,10 @@ setr voice_enableRadioAnim 1
 setr voice_syncData 1
 
 # QBCore locale config
-setr qb_locale "en"
+setr qb_locale "pt"
 
 # QBCore UseTarget
-setr UseTarget false
+setr UseTarget true
 
 # These resources will start by default.
 ensure mapmanager
@@ -53,10 +53,15 @@ ensure baseevents
 
 # QBCore & Extra stuff
 ensure qb-core
+ensure ox_lib #suga
+ensure illenium-appearance#suga
+setr illenium-appearance:locale "pt-BR" #suga
 ensure [qb]
-ensure [standalone]
+ensure [standalone] 
 ensure [voice]
 ensure [defaultmaps]
+ensure [ups] #suga
+ensure [ups_eup] #suga
 
 ## Permissions ##
 add_ace group.admin command allow # allow all commands

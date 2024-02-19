@@ -1,26 +1,21 @@
 
 ================================================================
-======== txAdmin v6.0.2 atop fxserver 7290 Starting - 18/02/2024, 21:44:15
+======== txAdmin v6.0.2 atop fxserver 7290 Starting - 19/02/2024, 00:24:53
 ================================================================
-[21:44:29][sugawy] created admins file
-[21:44:47][sugawy] Changing global settings via setup stepper and started Deployer.
-[21:44:52][sugawy] Setting recipe.
-[21:46:20][sugawy] Running recipe.
-[21:50:52][sugawy] Completed and committed server deploy.
-[21:53:24][sugawy] executed "STOP SERVER"
 
 ================================================================
-======== txAdmin v6.0.2 atop fxserver 7290 Starting - 18/02/2024, 22:04:00
+======== Log Rotated - 19/02/2024, 00:24:54                     
 ================================================================
-[22:06:58][sugawy] logged in from 127.0.0.1 via citizenfx
-[22:07:00][sugawy] executed "STOP SERVER"
-
-================================================================
-======== txAdmin v6.0.2 atop fxserver 7290 Starting - 18/02/2024, 22:54:15
-================================================================
-[22:56:11][sugawy] logged in via in-game ui
-[23:11:11][sugawy] logged in from 127.0.0.1 via citizenfx
-[23:11:12][sugawy] logged in via in-game ui
-[23:11:22][sugawy] executed "ensure "qb-mechanicjob""
-[23:15:26][sugawy] executed "ensure "ps-hud""
-[23:16:45][sugawy] executed "STOP SERVER"
+[00:25:17][sugawy] logged in from 127.0.0.1 via citizenfx
+[00:26:16][sugawy] executed "RESTART SERVER"
+[00:26:51][sugawy] executed "RESTART SERVER"
+[00:28:59][MONITOR] Restarting server (resource "busclothespack" failed to start within the 120s time limit).
+[00:29:20][sugawy] Changing monitor settings.
+[00:39:04][sugawy] logged in via in-game ui
+[00:41:26][sugawy] executed "ensure "illenium-appearance""
+[01:13:25][sugawy] executed "refresh"
+[01:13:30][sugawy] executed "ensure "rpemotes""
+[01:14:45][sugawy] logged in via in-game ui
+[01:29:52][sugawy] executed "RESTART SERVER"
+[01:34:30][sugawy] logged in via in-game ui
+[01:47:18][sugawy] executed "STOP SERVER"

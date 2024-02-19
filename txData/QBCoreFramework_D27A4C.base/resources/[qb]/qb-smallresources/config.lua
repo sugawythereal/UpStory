@@ -17,7 +17,7 @@ Config.AFK = {
 
 Config.HandsUp = {
     command = 'hu',
-    keybind = 'X',
+    keybind = 'U',
     controls = { 24, 25, 47, 58, 59, 63, 64, 71, 72, 75, 140, 141, 142, 143, 257, 263, 264 }
 }
 
@@ -79,9 +79,9 @@ Config.Density = {
 }
 
 Config.Disable = {
-    hudComponents = { 1, 2, 3, 4, 7, 9, 13, 14, 19, 20, 21, 22 }, -- Hud Components: https://docs.fivem.net/natives/?_0x6806C51AD12B83B8
+    hudComponents = { 1, 2, 3, 4, 7, 9, 13, 19, 20, 21, 22 }, -- Hud Components: https://docs.fivem.net/natives/?_0x6806C51AD12B83B8
     controls = { 37 },                                            -- Controls: https://docs.fivem.net/docs/game-references/controls/
-    displayAmmo = true,                                           -- false disables ammo display
+    displayAmmo = false,                                           -- false disables ammo display
     ambience = false,                                             -- disables distance sirens, distance car alarms, flight music, etc
     idleCamera = true,                                            -- disables the idle cinematic camera
     vestDrawable = false,                                         -- disables the vest equipped when using heavy armor
