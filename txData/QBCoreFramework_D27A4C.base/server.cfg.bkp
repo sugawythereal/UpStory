@@ -54,13 +54,14 @@ ensure baseevents
 # QBCore & Extra stuff
 ensure qb-core
 ensure ox_lib #suga
-ensure illenium-appearance#suga
+ensure illenium-appearance #suga
 setr illenium-appearance:locale "pt-BR" #suga
 ensure [qb]
 ensure [standalone] 
 ensure [voice]
 ensure [defaultmaps]
 ensure [ups] #suga
+setr ox:locale pt-br #suga
 ensure [ups_eup] #suga
 
 ## Permissions ##

@@ -108,7 +108,7 @@ CREATE TABLE IF NOT EXISTS `crypto` (
 
 -- Dumping data for table upstorydb.crypto: ~0 rows (approximately)
 INSERT INTO `crypto` (`crypto`, `worth`, `history`) VALUES
-	('qbit', 996, '[{"PreviousWorth":1000,"NewWorth":999},{"PreviousWorth":999,"NewWorth":999},{"PreviousWorth":999,"NewWorth":996},{"PreviousWorth":996,"NewWorth":996}]');
+	('qbit', 1015, '[{"PreviousWorth":1000,"NewWorth":1010},{"PreviousWorth":1010,"NewWorth":1016},{"PreviousWorth":1016,"NewWorth":1015}]');
 
 -- Dumping structure for table upstorydb.crypto_transactions
 CREATE TABLE IF NOT EXISTS `crypto_transactions` (
@@ -212,6 +212,176 @@ CREATE TABLE IF NOT EXISTS `management_outfits` (
 
 -- Dumping data for table upstorydb.management_outfits: ~0 rows (approximately)
 
+-- Dumping structure for table upstorydb.mdt_bolos
+CREATE TABLE IF NOT EXISTS `mdt_bolos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `author` varchar(50) DEFAULT NULL,
+  `title` varchar(50) DEFAULT NULL,
+  `plate` varchar(50) DEFAULT NULL,
+  `owner` varchar(50) DEFAULT NULL,
+  `individual` varchar(50) DEFAULT NULL,
+  `detail` text DEFAULT NULL,
+  `tags` text DEFAULT NULL,
+  `gallery` text DEFAULT NULL,
+  `officersinvolved` text DEFAULT NULL,
+  `time` varchar(20) DEFAULT NULL,
+  `jobtype` varchar(25) NOT NULL DEFAULT 'police',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table upstorydb.mdt_bolos: ~0 rows (approximately)
+
+-- Dumping structure for table upstorydb.mdt_bulletin
+CREATE TABLE IF NOT EXISTS `mdt_bulletin` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` text NOT NULL,
+  `desc` text NOT NULL,
+  `author` varchar(50) NOT NULL,
+  `time` varchar(20) NOT NULL,
+  `jobtype` varchar(25) DEFAULT 'police',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table upstorydb.mdt_bulletin: ~0 rows (approximately)
+
+-- Dumping structure for table upstorydb.mdt_clocking
+CREATE TABLE IF NOT EXISTS `mdt_clocking` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `user_id` varchar(50) NOT NULL DEFAULT '',
+  `firstname` varchar(255) NOT NULL DEFAULT '',
+  `lastname` varchar(255) NOT NULL DEFAULT '',
+  `clock_in_time` varchar(255) NOT NULL DEFAULT '',
+  `clock_out_time` varchar(50) DEFAULT NULL,
+  `total_time` int(10) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`user_id`) USING BTREE,
+  KEY `id` (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table upstorydb.mdt_clocking: ~0 rows (approximately)
+
+-- Dumping structure for table upstorydb.mdt_convictions
+CREATE TABLE IF NOT EXISTS `mdt_convictions` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `cid` varchar(50) DEFAULT NULL,
+  `linkedincident` int(11) NOT NULL DEFAULT 0,
+  `warrant` varchar(50) DEFAULT NULL,
+  `guilty` varchar(50) DEFAULT NULL,
+  `processed` varchar(50) DEFAULT NULL,
+  `associated` varchar(50) DEFAULT '0',
+  `charges` text DEFAULT NULL,
+  `fine` int(11) DEFAULT 0,
+  `sentence` int(11) DEFAULT 0,
+  `recfine` int(11) DEFAULT 0,
+  `recsentence` int(11) DEFAULT 0,
+  `time` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table upstorydb.mdt_convictions: ~0 rows (approximately)
+
+-- Dumping structure for table upstorydb.mdt_data
+CREATE TABLE IF NOT EXISTS `mdt_data` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `cid` varchar(20) NOT NULL,
+  `information` mediumtext DEFAULT NULL,
+  `tags` text NOT NULL,
+  `gallery` text NOT NULL,
+  `jobtype` varchar(25) DEFAULT 'police',
+  `pfp` text DEFAULT NULL,
+  `fingerprint` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`cid`),
+  KEY `id` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table upstorydb.mdt_data: ~0 rows (approximately)
+
+-- Dumping structure for table upstorydb.mdt_impound
+CREATE TABLE IF NOT EXISTS `mdt_impound` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `vehicleid` int(11) NOT NULL,
+  `linkedreport` int(11) NOT NULL,
+  `fee` int(11) DEFAULT NULL,
+  `time` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table upstorydb.mdt_impound: ~0 rows (approximately)
+
+-- Dumping structure for table upstorydb.mdt_incidents
+CREATE TABLE IF NOT EXISTS `mdt_incidents` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `author` varchar(50) NOT NULL DEFAULT '',
+  `title` varchar(50) NOT NULL DEFAULT '0',
+  `details` text NOT NULL,
+  `tags` text NOT NULL,
+  `officersinvolved` text NOT NULL,
+  `civsinvolved` text NOT NULL,
+  `evidence` text NOT NULL,
+  `time` varchar(20) DEFAULT NULL,
+  `jobtype` varchar(25) NOT NULL DEFAULT 'police',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table upstorydb.mdt_incidents: ~0 rows (approximately)
+
+-- Dumping structure for table upstorydb.mdt_logs
+CREATE TABLE IF NOT EXISTS `mdt_logs` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `text` text NOT NULL,
+  `time` varchar(20) DEFAULT NULL,
+  `jobtype` varchar(25) DEFAULT 'police',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table upstorydb.mdt_logs: ~0 rows (approximately)
+
+-- Dumping structure for table upstorydb.mdt_reports
+CREATE TABLE IF NOT EXISTS `mdt_reports` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `author` varchar(50) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `type` varchar(50) DEFAULT NULL,
+  `details` text DEFAULT NULL,
+  `tags` text DEFAULT NULL,
+  `officersinvolved` text DEFAULT NULL,
+  `civsinvolved` text DEFAULT NULL,
+  `gallery` text DEFAULT NULL,
+  `time` varchar(20) DEFAULT NULL,
+  `jobtype` varchar(25) DEFAULT 'police',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table upstorydb.mdt_reports: ~0 rows (approximately)
+
+-- Dumping structure for table upstorydb.mdt_vehicleinfo
+CREATE TABLE IF NOT EXISTS `mdt_vehicleinfo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `plate` varchar(50) DEFAULT NULL,
+  `information` text NOT NULL DEFAULT '',
+  `stolen` tinyint(1) NOT NULL DEFAULT 0,
+  `code5` tinyint(1) NOT NULL DEFAULT 0,
+  `image` text NOT NULL DEFAULT '',
+  `points` int(11) DEFAULT 0,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table upstorydb.mdt_vehicleinfo: ~0 rows (approximately)
+
+-- Dumping structure for table upstorydb.mdt_weaponinfo
+CREATE TABLE IF NOT EXISTS `mdt_weaponinfo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `serial` varchar(50) DEFAULT NULL,
+  `owner` varchar(50) DEFAULT NULL,
+  `information` text NOT NULL DEFAULT '',
+  `weapClass` varchar(50) DEFAULT NULL,
+  `weapModel` varchar(50) DEFAULT NULL,
+  `image` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `serial` (`serial`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table upstorydb.mdt_weaponinfo: ~0 rows (approximately)
+
 -- Dumping structure for table upstorydb.occasion_vehicles
 CREATE TABLE IF NOT EXISTS `occasion_vehicles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -300,11 +470,11 @@ CREATE TABLE IF NOT EXISTS `players` (
   KEY `id` (`id`),
   KEY `last_updated` (`last_updated`),
   KEY `license` (`license`)
-) ENGINE=InnoDB AUTO_INCREMENT=65 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=75 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dumping data for table upstorydb.players: ~2 rows (approximately)
 INSERT INTO `players` (`id`, `citizenid`, `cid`, `license`, `name`, `money`, `charinfo`, `job`, `gang`, `position`, `metadata`, `inventory`, `last_updated`) VALUES
-	(1, 'BKD55994', 1, 'license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139', 'sugaa', '{"cash":500,"crypto":0,"bank":5110}', '{"cid":1,"phone":"5289346568","birthdate":"2001-11-18","account":"US02QBCore3381368599","firstname":"Tokyo","backstory":"placeholder backstory","gender":1,"lastname":"Raven","nationality":"Portugal"}', '{"isboss":false,"name":"unemployed","label":"Civilian","payment":10,"grade":{"name":"Freelancer","level":0},"type":"none","onduty":true}', '{"isboss":false,"grade":{"name":"none","level":0},"name":"none","label":"No Gang Affiliaton"}', '{"x":-1084.931884765625,"y":-789.3626098632813,"z":19.2711181640625}', '{"criminalrecord":{"hasRecord":false},"phone":[],"hunger":45.39999999999995,"callsign":"NO CALLSIGN","status":[],"ishandcuffed":false,"thirst":50.60000000000003,"dealerrep":0,"phonedata":{"InstalledApps":[],"SerialNumber":14625933},"injail":0,"walletid":"QB-37492843","fingerprint":"bq619J95lnw4784","attachmentcraftingrep":0,"isdead":false,"tracker":false,"bloodtype":"O-","inside":{"apartment":[]},"armor":0,"craftingrep":0,"fitbit":[],"jobrep":{"hotdog":0,"tow":0,"trucker":0,"taxi":0},"jailitems":[],"stress":0,"licences":{"driver":true,"business":false,"weapon":false},"inlaststand":false}', '[{"name":"driver_license","type":"item","amount":1,"slot":1,"info":{"birthdate":"2001-11-18","firstname":"Tokyo","lastname":"Raven","type":"Class C Driver License"}},{"name":"phone","type":"item","amount":1,"slot":2,"info":[]},{"name":"id_card","type":"item","amount":1,"slot":3,"info":{"birthdate":"2001-11-18","nationality":"Portugal","citizenid":"BKD55994","firstname":"Tokyo","gender":1,"lastname":"Raven"}},{"name":"weapon_pistol","type":"weapon","amount":1,"slot":4,"info":{"quality":97.59999999999993,"ammo":104,"serie":"96sDh6Ja088FecW"}},{"name":"radio","type":"item","amount":1,"slot":5,"info":[]}]', '2024-02-19 17:22:45'),
+	(1, 'BKD55994', 1, 'license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139', 'sugaa', '{"bank":5120,"cash":500,"crypto":0}', '{"lastname":"Raven","phone":"5289346568","cid":1,"nationality":"Portugal","firstname":"Tokyo","birthdate":"2001-11-18","account":"US02QBCore3381368599","gender":1,"backstory":"placeholder backstory"}', '{"isboss":false,"type":"none","name":"unemployed","payment":10,"grade":{"level":0,"name":"Freelancer"},"label":"Civilian","onduty":true}', '{"isboss":false,"label":"No Gang Affiliaton","grade":{"level":0,"name":"none"},"name":"none"}', '{"x":-1064.3209228515626,"y":-801.876953125,"z":19.2542724609375}', '{"stress":0,"injail":0,"inlaststand":false,"craftingrep":0,"phonedata":{"InstalledApps":[],"SerialNumber":14625933},"bloodtype":"O-","dealerrep":0,"ishandcuffed":false,"hunger":100,"jobrep":{"hotdog":0,"tow":0,"trucker":0,"taxi":0},"criminalrecord":{"hasRecord":false},"thirst":100,"armor":0,"status":[],"fitbit":[],"phone":[],"fingerprint":"bq619J95lnw4784","tracker":false,"isdead":false,"licences":{"business":false,"driver":true,"weapon":false},"jailitems":[],"attachmentcraftingrep":0,"inside":{"apartment":[]},"callsign":"NO CALLSIGN","walletid":"QB-37492843"}', '[{"info":{"lastname":"Raven","birthdate":"2001-11-18","type":"Class C Driver License","firstname":"Tokyo"},"amount":1,"slot":1,"name":"driver_license","type":"item"},{"info":[],"amount":1,"slot":2,"name":"phone","type":"item"},{"info":{"citizenid":"BKD55994","nationality":"Portugal","lastname":"Raven","gender":1,"birthdate":"2001-11-18","firstname":"Tokyo"},"amount":1,"slot":3,"name":"id_card","type":"item"},{"info":{"serie":"96sDh6Ja088FecW","quality":97.59999999999993,"ammo":104},"amount":1,"slot":4,"name":"weapon_pistol","type":"weapon"},{"info":[],"amount":1,"slot":5,"name":"radio","type":"item"}]', '2024-02-19 19:13:52'),
 	(62, 'XVR60631', 2, 'license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139', 'sugaa', '{"cash":500,"crypto":0,"bank":5010}', '{"cid":2,"phone":"1089661839","birthdate":"09/02/44","account":"US09QBCore7663239539","nationality":"USA","backstory":"Coisas sla","gender":0,"lastname":"Char","firstname":"Test"}', '{"onduty":true,"name":"unemployed","isboss":false,"payment":10,"grade":{"name":"Freelancer","level":0},"type":"none","label":"Civilian"}', '{"isboss":false,"grade":{"name":"none","level":0},"name":"none","label":"No Gang Affiliaton"}', '{"x":269.73626708984377,"y":-640.7604370117188,"z":42.00146484375}', '{"criminalrecord":{"hasRecord":false},"phone":[],"hunger":95.8,"attachmentcraftingrep":0,"status":[],"ishandcuffed":false,"thirst":96.2,"dealerrep":0,"phonedata":{"InstalledApps":[],"SerialNumber":37214603},"injail":0,"bloodtype":"AB+","armor":0,"walletid":"QB-35539386","fingerprint":"Es947I08ZmU8982","callsign":"NO CALLSIGN","jobrep":{"hotdog":0,"trucker":0,"tow":0,"taxi":0},"inside":{"apartment":[]},"isdead":false,"craftingrep":0,"fitbit":[],"tracker":false,"jailitems":[],"stress":0,"licences":{"driver":true,"business":false,"weapon":false},"inlaststand":false}', '[{"name":"phone","type":"item","amount":1,"slot":1,"info":[]},{"name":"id_card","type":"item","amount":1,"slot":2,"info":{"birthdate":"09/02/44","gender":0,"citizenid":"XVR60631","firstname":"Test","nationality":"USA","lastname":"Char"}},{"name":"driver_license","type":"item","amount":1,"slot":3,"info":{"birthdate":"09/02/44","firstname":"Test","lastname":"Char","type":"Class C Driver License"}}]', '2024-02-19 17:42:00');
 
 -- Dumping structure for table upstorydb.playerskins

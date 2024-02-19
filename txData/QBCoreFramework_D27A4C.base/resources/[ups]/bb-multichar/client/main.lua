@@ -301,8 +301,8 @@ RegisterNUICallback("delete", function(data, cb)
                     elseif CoreConfig.clothing_base == 'fivem-appearance' then
                         exports[CoreConfig.clothing_name]:setPedAppearance(CreatedPeds['default'], data.skin)
                     else
-                        -- @other clothing function here
-                        print('clothing is undefined :(')
+                        
+                        
                     end
                 end
 
