@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `apartments` (
   KEY `name` (`name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table upstorydb.apartments: ~1 rows (approximately)
+-- Dumping data for table upstorydb.apartments: ~2 rows (approximately)
 INSERT INTO `apartments` (`id`, `name`, `type`, `label`, `citizenid`) VALUES
 	(1, 'apartment35754', 'apartment3', 'Integrity Way 5754', 'BKD55994'),
 	(2, 'apartment37141', 'apartment3', 'Integrity Way 7141', 'XVR60631');
@@ -46,9 +46,11 @@ CREATE TABLE IF NOT EXISTS `bank_accounts` (
   `users` longtext DEFAULT '[]',
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE KEY `account_name` (`account_name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table upstorydb.bank_accounts: ~0 rows (approximately)
+-- Dumping data for table upstorydb.bank_accounts: ~1 rows (approximately)
+INSERT INTO `bank_accounts` (`id`, `citizenid`, `account_name`, `account_balance`, `account_type`, `users`) VALUES
+	(1, NULL, 'mechanic', 0, 'job', '[]');
 
 -- Dumping structure for table upstorydb.bank_statements
 CREATE TABLE IF NOT EXISTS `bank_statements` (
@@ -83,21 +85,6 @@ CREATE TABLE IF NOT EXISTS `bans` (
 
 -- Dumping data for table upstorydb.bans: ~0 rows (approximately)
 
--- Dumping structure for table upstorydb.cl_spawnselector
-CREATE TABLE IF NOT EXISTS `cl_spawnselector` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `location_data` longtext DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=375 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- Dumping data for table upstorydb.cl_spawnselector: ~5 rows (approximately)
-INSERT INTO `cl_spawnselector` (`id`, `location_data`) VALUES
-	(1, '{"locationText":"Hospital","iconColor":"rgb(51, 51, 51)","iconName":"fas fa-hospital","screenPosition":{"left":510,"resolution":{"height":1080,"width":1920},"top":571},"backgroundColor":"rgb(253, 92, 99)"}'),
-	(2, '{"locationText":"Legion Square","iconColor":"rgb(51, 51, 51)","iconName":"fas fa-tree","screenPosition":{"left":477,"resolution":{"height":1080,"width":1920},"top":546},"backgroundColor":"#c3f2cb"}'),
-	(3, '{"locationText":"Airport","iconColor":"rgb(51, 51, 51)","iconName":"fas fa-cart-flatbed-suitcase","screenPosition":{"left":167,"resolution":{"height":1080,"width":1920},"top":391},"backgroundColor":"rgb(200, 237, 253)"}'),
-	(4, '{"locationText":"Mount Chiliad","iconColor":"rgb(51, 51, 51)","iconName":"fas fa-person-hiking","screenPosition":{"left":1520,"resolution":{"height":1080,"width":1920},"top":595},"backgroundColor":"rgb(129, 104, 2)"}'),
-	(5, '{"locationText":"MRPD","iconColor":"rgb(51, 51, 51)","iconName":"fas fa-shield","screenPosition":{"left":454,"resolution":{"height":1080,"width":1920},"top":587},"backgroundColor":"rgb(124, 185, 232)"}');
-
 -- Dumping structure for table upstorydb.crypto
 CREATE TABLE IF NOT EXISTS `crypto` (
   `crypto` varchar(50) NOT NULL DEFAULT 'qbit',
@@ -106,9 +93,9 @@ CREATE TABLE IF NOT EXISTS `crypto` (
   PRIMARY KEY (`crypto`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 
--- Dumping data for table upstorydb.crypto: ~0 rows (approximately)
+-- Dumping data for table upstorydb.crypto: ~1 rows (approximately)
 INSERT INTO `crypto` (`crypto`, `worth`, `history`) VALUES
-	('qbit', 1015, '[{"PreviousWorth":1000,"NewWorth":1010},{"PreviousWorth":1010,"NewWorth":1016},{"PreviousWorth":1016,"NewWorth":1015}]');
+	('qbit', 1001, '[{"PreviousWorth":1000,"NewWorth":1010},{"PreviousWorth":1010,"NewWorth":1010},{"PreviousWorth":1010,"NewWorth":1010},{"PreviousWorth":1010,"NewWorth":1001}]');
 
 -- Dumping structure for table upstorydb.crypto_transactions
 CREATE TABLE IF NOT EXISTS `crypto_transactions` (
@@ -255,9 +242,11 @@ CREATE TABLE IF NOT EXISTS `mdt_clocking` (
   `total_time` int(10) NOT NULL DEFAULT 0,
   PRIMARY KEY (`user_id`) USING BTREE,
   KEY `id` (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table upstorydb.mdt_clocking: ~0 rows (approximately)
+-- Dumping data for table upstorydb.mdt_clocking: ~1 rows (approximately)
+INSERT INTO `mdt_clocking` (`id`, `user_id`, `firstname`, `lastname`, `clock_in_time`, `clock_out_time`, `total_time`) VALUES
+	(7, 'BKD55994', 'Tokyo', 'Raven', '2024-02-19 19:59:32', '2024-02-20 15:30:48', 70276);
 
 -- Dumping structure for table upstorydb.mdt_convictions
 CREATE TABLE IF NOT EXISTS `mdt_convictions` (
@@ -275,9 +264,11 @@ CREATE TABLE IF NOT EXISTS `mdt_convictions` (
   `recsentence` int(11) DEFAULT 0,
   `time` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table upstorydb.mdt_convictions: ~0 rows (approximately)
+-- Dumping data for table upstorydb.mdt_convictions: ~1 rows (approximately)
+INSERT INTO `mdt_convictions` (`id`, `cid`, `linkedincident`, `warrant`, `guilty`, `processed`, `associated`, `charges`, `fine`, `sentence`, `recfine`, `recsentence`, `time`) VALUES
+	(1, 'BKD55994', 1, '0', '0', '0', '0', '[]', 0, 3, NULL, NULL, '1708371643060');
 
 -- Dumping structure for table upstorydb.mdt_data
 CREATE TABLE IF NOT EXISTS `mdt_data` (
@@ -291,9 +282,11 @@ CREATE TABLE IF NOT EXISTS `mdt_data` (
   `fingerprint` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`cid`),
   KEY `id` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table upstorydb.mdt_data: ~0 rows (approximately)
+-- Dumping data for table upstorydb.mdt_data: ~1 rows (approximately)
+INSERT INTO `mdt_data` (`id`, `cid`, `information`, `tags`, `gallery`, `jobtype`, `pfp`, `fingerprint`) VALUES
+	(1, 'BKD55994', NULL, 'null', '["https://cdn.discordapp.com/attachments/1209219475606347897/1209620640219275335/screenshot.jpg?ex=65e79602&is=65d52102&hm=9d29f6335ad75406f460b0d8883007758a5bb41c5648a2f2ee29ab5e854e1101&"]', 'police', 'https://cdn.discordapp.com/attachments/1209219475606347897/1209620640219275335/screenshot.jpg?ex=65e79602&is=65d52102&hm=9d29f6335ad75406f460b0d8883007758a5bb41c5648a2f2ee29ab5e854e1101&', NULL);
 
 -- Dumping structure for table upstorydb.mdt_impound
 CREATE TABLE IF NOT EXISTS `mdt_impound` (
@@ -320,9 +313,11 @@ CREATE TABLE IF NOT EXISTS `mdt_incidents` (
   `time` varchar(20) DEFAULT NULL,
   `jobtype` varchar(25) NOT NULL DEFAULT 'police',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table upstorydb.mdt_incidents: ~0 rows (approximately)
+-- Dumping data for table upstorydb.mdt_incidents: ~1 rows (approximately)
+INSERT INTO `mdt_incidents` (`id`, `author`, `title`, `details`, `tags`, `officersinvolved`, `civsinvolved`, `evidence`, `time`, `jobtype`) VALUES
+	(1, 'Tokyo Raven', 'Name - Charge - 2/19/2024', '\n      <div style="color: white;">\n          <p><strong>📝 Summary:</strong></p>\n          <p><em>[Insert Report Summary Here]</em></p>\n          <p>&nbsp;</p>\n          <p><strong>🧍 Hostage:</strong> [Name Here]</p>\n          <p>&nbsp;</p>\n          <p><strong>🗄️ Evidence Location:</strong> Stash # | Drawer #</p>\n          <p>&nbsp;</p>\n          <p><strong>🔪 Weapons/Items Confiscated:</strong></p>\n          <p><em>· [Insert List Here]</em></p>\n          <p>&nbsp;</p>\n          <p>-----</p>\n          <p><strong style="background-color: var(--color-1);">💸 Fine:</strong></p>\n          <p>&nbsp;</p>\n          <p><strong>⌚ Sentence:</strong></p>\n          <p>-----</p>\n      </div>\n  ', '[]', '[]', '[]', '[]', '1708371643060', 'police');
 
 -- Dumping structure for table upstorydb.mdt_logs
 CREATE TABLE IF NOT EXISTS `mdt_logs` (
@@ -470,11 +465,11 @@ CREATE TABLE IF NOT EXISTS `players` (
   KEY `id` (`id`),
   KEY `last_updated` (`last_updated`),
   KEY `license` (`license`)
-) ENGINE=InnoDB AUTO_INCREMENT=75 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=148 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dumping data for table upstorydb.players: ~2 rows (approximately)
 INSERT INTO `players` (`id`, `citizenid`, `cid`, `license`, `name`, `money`, `charinfo`, `job`, `gang`, `position`, `metadata`, `inventory`, `last_updated`) VALUES
-	(1, 'BKD55994', 1, 'license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139', 'sugaa', '{"bank":5120,"cash":500,"crypto":0}', '{"lastname":"Raven","phone":"5289346568","cid":1,"nationality":"Portugal","firstname":"Tokyo","birthdate":"2001-11-18","account":"US02QBCore3381368599","gender":1,"backstory":"placeholder backstory"}', '{"isboss":false,"type":"none","name":"unemployed","payment":10,"grade":{"level":0,"name":"Freelancer"},"label":"Civilian","onduty":true}', '{"isboss":false,"label":"No Gang Affiliaton","grade":{"level":0,"name":"none"},"name":"none"}', '{"x":-1064.3209228515626,"y":-801.876953125,"z":19.2542724609375}', '{"stress":0,"injail":0,"inlaststand":false,"craftingrep":0,"phonedata":{"InstalledApps":[],"SerialNumber":14625933},"bloodtype":"O-","dealerrep":0,"ishandcuffed":false,"hunger":100,"jobrep":{"hotdog":0,"tow":0,"trucker":0,"taxi":0},"criminalrecord":{"hasRecord":false},"thirst":100,"armor":0,"status":[],"fitbit":[],"phone":[],"fingerprint":"bq619J95lnw4784","tracker":false,"isdead":false,"licences":{"business":false,"driver":true,"weapon":false},"jailitems":[],"attachmentcraftingrep":0,"inside":{"apartment":[]},"callsign":"NO CALLSIGN","walletid":"QB-37492843"}', '[{"info":{"lastname":"Raven","birthdate":"2001-11-18","type":"Class C Driver License","firstname":"Tokyo"},"amount":1,"slot":1,"name":"driver_license","type":"item"},{"info":[],"amount":1,"slot":2,"name":"phone","type":"item"},{"info":{"citizenid":"BKD55994","nationality":"Portugal","lastname":"Raven","gender":1,"birthdate":"2001-11-18","firstname":"Tokyo"},"amount":1,"slot":3,"name":"id_card","type":"item"},{"info":{"serie":"96sDh6Ja088FecW","quality":97.59999999999993,"ammo":104},"amount":1,"slot":4,"name":"weapon_pistol","type":"weapon"},{"info":[],"amount":1,"slot":5,"name":"radio","type":"item"}]', '2024-02-19 19:13:52'),
+	(1, 'BKD55994', 1, 'license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139', 'sugawy', '{"bank":6640,"cash":740,"crypto":0}', '{"account":"US02QBCore3381368599","phone":"5289346568","firstname":"Tokyo","backstory":"placeholder backstory","birthdate":"2001-11-18","lastname":"Raven","nationality":"Portugal","cid":1,"gender":1}', '{"type":"none","onduty":true,"name":"unemployed","isboss":false,"label":"Civilian","grade":{"level":0,"name":"No Grades"},"payment":30}', '{"isboss":false,"grade":{"level":0,"name":"none"},"label":"No Gang Affiliaton","name":"none"}', '{"x":1855.226318359375,"y":2586.804443359375,"z":45.6578369140625}', '{"fitbit":[],"inside":{"apartment":[]},"isdead":false,"fingerprint":"bq619J95lnw4784","ishandcuffed":false,"craftingrep":0,"criminalrecord":{"hasRecord":true,"date":{"wday":3,"isdst":false,"year":2024,"day":20,"hour":22,"month":2,"min":0,"yday":51,"sec":33}},"jobrep":{"trucker":0,"tow":0,"taxi":0,"hotdog":0},"attachmentcraftingrep":0,"bloodtype":"O-","inlaststand":false,"phone":[],"tracker":false,"hunger":87.39999999999999,"callsign":"NO CALLSIGN","stress":0,"status":[],"phonedata":{"SerialNumber":14625933,"InstalledApps":[]},"injail":0,"dealerrep":0,"thirst":88.60000000000001,"armor":0,"walletid":"QB-37492843","jailitems":[],"licences":{"weapon":false,"business":false,"driver":true}}', '[{"amount":1,"type":"item","slot":1,"info":[],"name":"phone"},{"amount":1,"type":"item","slot":2,"info":{"lastname":"Raven","firstname":"Tokyo","gender":1,"nationality":"Portugal","birthdate":"2001-11-18","citizenid":"BKD55994"},"name":"id_card"},{"amount":1,"type":"item","slot":3,"info":[],"name":"radio"},{"amount":1,"type":"weapon","slot":4,"info":{"serie":"96sDh6Ja088FecW","ammo":56,"quality":90.54999999999969},"name":"weapon_pistol"},{"amount":1,"type":"item","slot":5,"info":{"type":"Class C Driver License","firstname":"Tokyo","birthdate":"2001-11-18","lastname":"Raven"},"name":"driver_license"}]', '2024-02-20 22:04:56'),
 	(62, 'XVR60631', 2, 'license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139', 'sugaa', '{"cash":500,"crypto":0,"bank":5010}', '{"cid":2,"phone":"1089661839","birthdate":"09/02/44","account":"US09QBCore7663239539","nationality":"USA","backstory":"Coisas sla","gender":0,"lastname":"Char","firstname":"Test"}', '{"onduty":true,"name":"unemployed","isboss":false,"payment":10,"grade":{"name":"Freelancer","level":0},"type":"none","label":"Civilian"}', '{"isboss":false,"grade":{"name":"none","level":0},"name":"none","label":"No Gang Affiliaton"}', '{"x":269.73626708984377,"y":-640.7604370117188,"z":42.00146484375}', '{"criminalrecord":{"hasRecord":false},"phone":[],"hunger":95.8,"attachmentcraftingrep":0,"status":[],"ishandcuffed":false,"thirst":96.2,"dealerrep":0,"phonedata":{"InstalledApps":[],"SerialNumber":37214603},"injail":0,"bloodtype":"AB+","armor":0,"walletid":"QB-35539386","fingerprint":"Es947I08ZmU8982","callsign":"NO CALLSIGN","jobrep":{"hotdog":0,"trucker":0,"tow":0,"taxi":0},"inside":{"apartment":[]},"isdead":false,"craftingrep":0,"fitbit":[],"tracker":false,"jailitems":[],"stress":0,"licences":{"driver":true,"business":false,"weapon":false},"inlaststand":false}', '[{"name":"phone","type":"item","amount":1,"slot":1,"info":[]},{"name":"id_card","type":"item","amount":1,"slot":2,"info":{"birthdate":"09/02/44","gender":0,"citizenid":"XVR60631","firstname":"Test","nationality":"USA","lastname":"Char"}},{"name":"driver_license","type":"item","amount":1,"slot":3,"info":{"birthdate":"09/02/44","firstname":"Test","lastname":"Char","type":"Class C Driver License"}}]', '2024-02-19 17:42:00');
 
 -- Dumping structure for table upstorydb.playerskins
@@ -489,7 +484,7 @@ CREATE TABLE IF NOT EXISTS `playerskins` (
   KEY `active` (`active`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
--- Dumping data for table upstorydb.playerskins: ~1 rows (approximately)
+-- Dumping data for table upstorydb.playerskins: ~2 rows (approximately)
 INSERT INTO `playerskins` (`id`, `citizenid`, `model`, `skin`, `active`) VALUES
 	(1, 'BKD55994', 'mp_f_freemode_01', '{"eyeColor":3,"props":[{"texture":-1,"drawable":-1,"prop_id":2},{"texture":-1,"drawable":-1,"prop_id":7},{"texture":0,"drawable":-1,"prop_id":0},{"texture":0,"drawable":-1,"prop_id":1},{"texture":0,"drawable":-1,"prop_id":6}],"headBlend":{"thirdMix":0,"shapeMix":0.7,"shapeFirst":45,"skinFirst":12,"shapeSecond":25,"skinSecond":29,"shapeThird":0,"skinMix":0,"skinThird":0},"tattoos":[],"faceFeatures":{"cheeksWidth":0,"jawBoneBackSize":0,"chinBoneLenght":0,"jawBoneWidth":-0.3,"nosePeakSize":0,"nosePeakLowering":0.1,"chinHole":0,"noseBoneTwist":0,"eyeBrownForward":0,"chinBoneSize":0,"chinBoneLowering":0,"cheeksBoneHigh":0,"nosePeakHigh":0.2,"eyesOpening":0,"eyeBrownHigh":0,"cheeksBoneWidth":0,"neckThickness":0.2,"noseWidth":-0.4,"lipsThickness":-0.7,"noseBoneHigh":0.4},"components":[{"texture":0,"component_id":0,"drawable":0},{"texture":0,"component_id":2,"drawable":0},{"texture":2,"component_id":4,"drawable":304},{"texture":0,"component_id":11,"drawable":716},{"texture":0,"component_id":8,"drawable":416},{"texture":2,"component_id":7,"drawable":249},{"texture":0,"component_id":3,"drawable":304},{"texture":2,"component_id":6,"drawable":225},{"texture":7,"component_id":10,"drawable":18},{"texture":0,"component_id":5,"drawable":35},{"texture":0,"component_id":9,"drawable":0},{"texture":0,"component_id":1,"drawable":295}],"hair":{"style":94,"highlight":9,"color":20,"texture":0},"model":"mp_f_freemode_01","headOverlays":{"eyebrows":{"style":11,"color":0,"opacity":1,"secondColor":0},"ageing":{"style":0,"color":0,"opacity":0,"secondColor":0},"lipstick":{"style":4,"color":7,"opacity":0.5,"secondColor":0},"beard":{"style":0,"color":0,"opacity":0,"secondColor":0},"makeUp":{"style":14,"color":56,"opacity":1,"secondColor":10},"blush":{"style":2,"color":6,"opacity":0.5,"secondColor":0},"moleAndFreckles":{"style":0,"color":0,"opacity":0.7,"secondColor":0},"blemishes":{"style":0,"color":0,"opacity":0,"secondColor":0},"complexion":{"style":0,"color":0,"opacity":0,"secondColor":0},"bodyBlemishes":{"style":0,"color":0,"opacity":0,"secondColor":0},"chestHair":{"style":0,"color":0,"opacity":0,"secondColor":0},"sunDamage":{"style":0,"color":0,"opacity":0,"secondColor":0}}}', 1),
 	(2, 'XVR60631', 'mp_m_freemode_01', '{"tattoos":[],"hair":{"style":0,"texture":0,"highlight":0,"color":0},"eyeColor":0,"props":[{"texture":-1,"drawable":-1,"prop_id":0},{"texture":-1,"drawable":-1,"prop_id":1},{"texture":-1,"drawable":-1,"prop_id":2},{"texture":-1,"drawable":-1,"prop_id":6},{"texture":-1,"drawable":-1,"prop_id":7}],"headBlend":{"skinThird":0,"shapeThird":0,"skinMix":0,"shapeFirst":0,"shapeMix":0,"thirdMix":0,"shapeSecond":0,"skinSecond":0,"skinFirst":0},"faceFeatures":{"chinBoneSize":0,"lipsThickness":0,"cheeksBoneHigh":0,"nosePeakSize":0,"nosePeakHigh":0,"noseWidth":0,"noseBoneTwist":0,"noseBoneHigh":0,"cheeksBoneWidth":0,"chinBoneLenght":0,"eyesOpening":0,"eyeBrownHigh":0,"chinBoneLowering":0,"eyeBrownForward":0,"neckThickness":0,"jawBoneWidth":0,"nosePeakLowering":0,"cheeksWidth":0,"jawBoneBackSize":0,"chinHole":0},"components":[{"texture":0,"drawable":0,"component_id":0},{"texture":0,"drawable":0,"component_id":1},{"texture":0,"drawable":0,"component_id":2},{"texture":0,"drawable":0,"component_id":3},{"texture":0,"drawable":0,"component_id":4},{"texture":0,"drawable":0,"component_id":5},{"texture":0,"drawable":0,"component_id":6},{"texture":0,"drawable":0,"component_id":7},{"texture":0,"drawable":0,"component_id":8},{"texture":0,"drawable":0,"component_id":9},{"texture":0,"drawable":0,"component_id":10},{"texture":0,"drawable":0,"component_id":11}],"model":"mp_m_freemode_01","headOverlays":{"eyebrows":{"opacity":0,"secondColor":0,"style":0,"color":0},"sunDamage":{"opacity":0,"secondColor":0,"style":0,"color":0},"moleAndFreckles":{"opacity":0,"secondColor":0,"style":0,"color":0},"lipstick":{"opacity":0,"secondColor":0,"style":0,"color":0},"complexion":{"opacity":0,"secondColor":0,"style":0,"color":0},"ageing":{"opacity":0,"secondColor":0,"style":0,"color":0},"chestHair":{"opacity":0,"secondColor":0,"style":0,"color":0},"makeUp":{"opacity":0,"secondColor":0,"style":0,"color":0},"bodyBlemishes":{"opacity":0,"secondColor":0,"style":0,"color":0},"blemishes":{"opacity":0,"secondColor":0,"style":0,"color":0},"beard":{"opacity":0,"secondColor":0,"style":0,"color":0},"blush":{"opacity":0,"secondColor":0,"style":0,"color":0}}}', 1);
