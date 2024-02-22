@@ -229,19 +229,15 @@ end)
 
 RegisterNetEvent('prison:client:Enter', function(time)
 	local invokingResource = GetInvokingResource()
-	if invokingResource and invokingResource ~= 'qb-policejob' and invokingResource ~= 'qb-ambulancejob' and invokingResource ~= GetCurrentResourceName() then
+	if invokingResource and invokingResource ~= 'CL-SpawnSelector' and invokingResource ~= 'qb-policejob' and invokingResource ~= 'qb-ambulancejob' and invokingResource ~= GetCurrentResourceName() then
 		-- Use QBCore.Debug here for a quick and easy way to print to the console to grab your attention with this message
-		QBCore.Debug({ ('Player with source %s tried to execute prison:client:Enter manually or from another resource which is not authorized to call this, invokedResource: %s'):format(GetPlayerServerId(PlayerId()), invokingResource) })
+		QBCore.Debug({('Player with source %s tried to execute prison:client:Enter manually or from another resource which is not authorized to call this, invokedResource: %s'):format(GetPlayerServerId(PlayerId()), invokingResource)})
 		return
 	end
 
-	QBCore.Functions.Notify(Lang:t("error.injail", { Time = time }), "error")
+	QBCore.Functions.Notify( Lang:t("error.injail", {Time = time}), "error")
 
-	TriggerEvent("chat:addMessage", {
-		color = { 3, 132, 252 },
-		multiline = true,
-		args = { "SYSTEM", Lang:t("info.seized_property") }
-	})
+	TriggerEvent("chatMessage", "SYSTEM", "warning", "Your property has been seized, you'll get everything back when your time is up..")
 	DoScreenFadeOut(500)
 	while not IsScreenFadedOut() do
 		Wait(10)
@@ -250,6 +246,7 @@ RegisterNetEvent('prison:client:Enter', function(time)
 	SetEntityCoords(PlayerPedId(), RandomStartPosition.coords.x, RandomStartPosition.coords.y, RandomStartPosition.coords.z - 0.9, 0, 0, 0, false)
 	SetEntityHeading(PlayerPedId(), RandomStartPosition.coords.w)
 	Wait(500)
+	TriggerEvent('animations:client:EmoteCommandStart', {RandomStartPosition.animation})
 
 	inJail = true
 	jailTime = time
@@ -261,14 +258,13 @@ RegisterNetEvent('prison:client:Enter', function(time)
 	end
 	currentJob = tempJobs[math.random(1, #tempJobs)]
 	CreateJobBlip(true)
-	ApplyClothes()
 	TriggerServerEvent("prison:server:SetJailStatus", jailTime)
 	TriggerServerEvent("prison:server:SaveJailItems", jailTime)
 	TriggerServerEvent("InteractSound_SV:PlayOnSource", "jail", 0.5)
 	CreateCellsBlip()
 	Wait(2000)
 	DoScreenFadeIn(1000)
-	QBCore.Functions.Notify(Lang:t("error.do_some_work", { currentjob = Config.Jobs[currentJob] }), "error")
+	QBCore.Functions.Notify( Lang:t("error.do_some_work", {currentjob = Config.Jobs[currentJob] }), "error")
 end)
 
 RegisterNetEvent('prison:client:Leave', function()

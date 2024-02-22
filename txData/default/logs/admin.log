@@ -1,87 +1,10 @@
 
 ================================================================
-======== txAdmin v6.0.2 atop fxserver 7290 Starting - 20/02/2024, 02:55:05
+======== txAdmin v6.0.2 atop fxserver 7290 Starting - 22/02/2024, 16:29:22
 ================================================================
 
 ================================================================
-======== Log Rotated - 20/02/2024, 02:55:05                     
+======== Log Rotated - 22/02/2024, 16:29:22                     
 ================================================================
-[03:00:40][sugawy] logged in via in-game ui
-[03:05:21][sugawy] logged in via in-game ui
-[03:13:15][sugawy] logged in from 127.0.0.1 via citizenfx
-[03:13:18][sugawy] executed "STOP SERVER"
-
-================================================================
-======== txAdmin v6.0.2 atop fxserver 7290 Starting - 20/02/2024, 15:07:07
-================================================================
-[15:29:17][sugawy] logged in via in-game ui
-[15:31:50][sugawy] logged in from 127.0.0.1 via citizenfx
-[15:31:53][sugawy] executed "STOP SERVER"
-[15:34:02][sugawy] executed "START SERVER"
-[15:37:46][sugawy] logged in via in-game ui
-[15:45:22][sugawy] logged in via in-game ui
-[15:46:37][sugawy] executed "STOP SERVER"
-
-================================================================
-======== txAdmin v6.0.2 atop fxserver 7290 Starting - 20/02/2024, 15:47:18
-================================================================
-[15:47:44][sugawy] logged in from 127.0.0.1 via citizenfx
-[15:47:46][sugawy] executed "STOP SERVER"
-[15:47:59][sugawy] executed "RESTART SERVER"
-[15:48:56][sugawy] logged in via in-game ui
-[15:53:05][sugawy] executed "RESTART SERVER"
-[15:54:35][sugawy] logged in via in-game ui
-[15:56:17][sugawy] executed "STOP SERVER"
-[15:57:05][sugawy] executed "START SERVER"
-[15:58:28][sugawy] logged in via in-game ui
-[16:04:56][sugawy] executed "RESTART SERVER"
-[16:05:57][sugawy] logged in via in-game ui
-[16:08:20][sugawy] logged in via in-game ui
-[16:40:21][sugawy] executed "STOP SERVER"
-
-================================================================
-======== txAdmin v6.0.2 atop fxserver 7290 Starting - 20/02/2024, 19:13:49
-================================================================
-[19:24:54][sugawy] logged in via in-game ui
-[19:31:06][sugawy] logged in from 127.0.0.1 via citizenfx
-[19:31:44][sugawy] executed "RESTART SERVER"
-[19:33:12][sugawy] logged in via in-game ui
-[19:44:30][sugawy] executed "STOP SERVER"
-[19:45:46][sugawy] executed "RESTART SERVER"
-[19:46:03][sugawy] executed "STOP SERVER"
-[19:46:51][sugawy] executed "START SERVER"
-[19:47:54][sugawy] logged in via in-game ui
-[19:49:04][sugawy] executed "ensure "qb-spawn""
-[19:50:09][sugawy] logged in via in-game ui
-[20:07:27][sugawy] executed "RESTART SERVER"
-[20:29:10][sugawy] executed "RESTART SERVER"
-[20:30:08][sugawy] logged in via in-game ui
-[20:32:18][sugawy] logged in via in-game ui
-[20:42:26][sugawy] executed "RESTART SERVER"
-[20:44:22][sugawy] logged in via in-game ui
-[20:50:12][sugawy] executed "RESTART SERVER"
-[20:51:15][sugawy] logged in via in-game ui
-[20:52:28][sugawy] executed "STOP SERVER"
-
-================================================================
-======== txAdmin v6.0.2 atop fxserver 7290 Starting - 20/02/2024, 21:10:48
-================================================================
-[21:28:11][sugawy] logged in via in-game ui
-[21:30:22][sugawy] logged in from 127.0.0.1 via citizenfx
-[21:31:00][sugawy] executed "RESTART SERVER"
-[21:34:21][sugawy] logged in via in-game ui
-[21:37:23][sugawy] executed "RESTART SERVER"
-[21:42:09][sugawy] logged in via in-game ui
-[21:49:23][sugawy] executed "STOP SERVER"
-[21:51:57][sugawy] executed "START SERVER"
-[21:57:37][sugawy] logged in via in-game ui
-[22:07:53][sugawy] executed "STOP SERVER"
-[22:08:53][sugawy] executed "RESTART SERVER"
-[22:15:46][sugawy] logged in via in-game ui
-[22:27:22][sugawy] executed "RESTART SERVER"
-[22:31:05][sugawy] executed "RESTART SERVER"
-[22:31:55][sugawy] executed "ensure "ox_doorlock""
-[22:34:05][sugawy] logged in via in-game ui
-[22:42:03][sugawy] executed "RESTART SERVER"
-[22:46:06][sugawy] logged in via in-game ui
-[22:52:50][sugawy] executed "STOP SERVER"
+[16:45:22][sugawy] logged in via in-game ui
+[16:52:24][sugawy] logged in via in-game ui
