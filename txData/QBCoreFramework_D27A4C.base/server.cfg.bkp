@@ -25,8 +25,8 @@ sets sv_projectName "[QB] UpStory"
 sets sv_projectDesc "UpStory built with <3 by sugaa"
 sets locale "pt-PT"
 load_server_icon myLogo.png
-sets banner_detail ""
-sets banner_connecting ""
+sets banner_detail "https://cdn.discordapp.com/attachments/599361118787600384/1209942326441541642/banner2.png?ex=65e8c19a&is=65d64c9a&hm=8c96df4fcd6ed8db21a50d6574b3ad48b7bab4fbb893f56e1e2413ed9ab243b6&"
+sets banner_connecting "https://cdn.discordapp.com/attachments/599361118787600384/1209942326441541642/banner2.png?ex=65e8c19a&is=65d64c9a&hm=8c96df4fcd6ed8db21a50d6574b3ad48b7bab4fbb893f56e1e2413ed9ab243b6&"
 set sv_enforceGameBuild 2944
 set mysql_connection_string "mysql://root:18112131@localhost/UpStoryDB?charset=utf8mb4"
 
@@ -65,7 +65,7 @@ ensure [defaultmaps]
 ensure [up] #suga
 setr ox:locale pt-br #suga
 ensure [up_eup] #suga
-ensure [up_mlo]
+
 
 ## Permissions ##
 add_ace group.admin command allow # allow all commands

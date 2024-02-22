@@ -2,7 +2,7 @@ Config = {}
 
 Config.Housing = "ps-housing" -- Your housing script, currently supported by qb-housing & ps-housing.
 
-Config.ServerLogo = "https://cdn.discordapp.com/attachments/967914093396774942/1135166511804338206/YOUR_RP_LOGO.png" -- Your server logo URL
+Config.ServerLogo = "https://media.discordapp.net/attachments/1209148652354801696/1210282638732951602/spawnlogo.png?ex=65e9fe8b&is=65d7898b&hm=fdb0098e217474659e69a20ddf0e2767b6488539331fe44eb919c4534a5906de&=&format=webp&quality=lossless&width=386&height=367" -- Your server logo URL
 
 Config.ScriptStyle = "light" -- The style you would like the script to be, available options are : light, dark, natural. If not light then the auto switch between dark and light will be stop.
 

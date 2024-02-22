@@ -29,7 +29,7 @@ function Property:PlayerEnter(src)
     local _src = tostring(src)
     self.playersInside[_src] = true
 
-    TriggerClientEvent('qb-weathersync:client:DisableSync', src)
+    TriggerClientEvent('qb-weathersync:client:EnableSync', src)
     TriggerClientEvent('ps-housing:client:enterProperty', src, self.property_id)
 
     if next(self.playersDoorbell) then
