@@ -1,6 +1,6 @@
 Config = {}
 
-Config.Housing = "qb-housing" -- Your housing script, currently supported by qb-housing & ps-housing.
+Config.Housing = "ps-housing" -- Your housing script, currently supported by qb-housing & ps-housing.
 
 Config.ServerLogo = "https://cdn.discordapp.com/attachments/967914093396774942/1135166511804338206/YOUR_RP_LOGO.png" -- Your server logo URL
 

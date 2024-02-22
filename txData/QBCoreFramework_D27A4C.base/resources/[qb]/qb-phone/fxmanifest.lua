@@ -8,8 +8,7 @@ version '1.3.0'
 ui_page 'html/index.html'
 
 shared_scripts {
-    'config.lua',
-    '@qb-apartments/config.lua'
+    'config.lua'
 }
 
 client_scripts {
