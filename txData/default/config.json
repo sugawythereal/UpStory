@@ -17,7 +17,7 @@
   },
   "playerDatabase": {
     "onJoinCheckBan": true,
-    "whitelistMode": "disabled",
+    "whitelistMode": "approvedLicense",
     "whitelistedDiscordRoles": [],
     "whitelistRejectionMessage": "Please join http://discord.gg/example and request to be whitelisted.",
     "requiredBanHwidMatches": 1,

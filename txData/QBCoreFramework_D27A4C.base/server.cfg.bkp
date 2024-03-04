@@ -40,6 +40,7 @@ setr voice_syncData 1
 
 # QBCore locale config
 setr qb_locale "pt"
+setr ox:locale pt-br #suga
 
 # QBCore UseTarget
 setr UseTarget true
@@ -64,12 +65,20 @@ ensure [voice]
 ensure [defaultmaps]
 ensure [up] #suga
 setr ox:locale pt-br #suga
-ensure [up_eup] #suga
+#ensure [up_eup] #suga
+ensure [up_mlo] #suga
 
+
+
+sv_pureLevel 1
 
 ## Permissions ##
 add_ace group.admin command allow # allow all commands
 add_principal identifier.fivem:4603903 group.admin #sugawy
+add_principal identifier.fivem:4603903 qbcore.god #suga
+add_principal identifier.fivem:4788245 qbcore.admin #new
+add_principal identifier.fivem:421882 qbcore.admin #fenix
+
 
 # Resources
 add_ace resource.qb-core command allow # Allow qb-core to execute commands

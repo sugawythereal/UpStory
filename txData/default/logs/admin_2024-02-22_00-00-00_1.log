@@ -1,0 +1,39 @@
+
+================================================================
+======== txAdmin v6.0.2 atop fxserver 7290 Starting - 22/02/2024, 16:29:22
+================================================================
+
+================================================================
+======== Log Rotated - 22/02/2024, 16:29:22                     
+================================================================
+[16:45:22][sugawy] logged in via in-game ui
+[16:52:24][sugawy] logged in via in-game ui
+[17:01:48][sugawy] logged in via in-game ui
+[17:18:38][sugawy] logged in from via NUI iframe
+[17:22:56][sugawy] logged in via in-game ui
+[17:37:34][sugawy] logged in from 127.0.0.1 via citizenfx
+[17:37:37][sugawy] executed "STOP SERVER"
+[18:36:14][sugawy] executed "START SERVER"
+
+================================================================
+======== txAdmin v6.0.2 atop fxserver 7290 Starting - 22/02/2024, 18:40:05
+================================================================
+[18:43:06][sugawy] logged in from 127.0.0.1 via citizenfx
+[18:44:56][sugawy] logged in via in-game ui
+[19:25:10][sugawy] executed "ensure "CL-SpawnSelector""
+[19:26:14][sugawy] executed "ensure "CL-SpawnSelector""
+[19:27:08][sugawy] executed "RESTART SERVER"
+[19:31:25][sugawy] logged in via in-game ui
+[19:32:42][sugawy] executed "STOP SERVER"
+[19:35:03][sugawy] executed "RESTART SERVER"
+[19:36:52][sugawy] executed "RESTART SERVER"
+[19:38:39][sugawy] logged in via in-game ui
+[19:43:16][sugawy] executed "RESTART SERVER"
+[19:47:56][sugawy] logged in via in-game ui
+[19:54:50][sugawy] executed "RESTART SERVER"
+[19:59:08][sugawy] logged in via in-game ui
+[20:17:56][sugawy] executed "ensure "ps-housing""
+[20:19:44][sugawy] logged in via in-game ui
+[20:24:54][sugawy] executed "STOP SERVER"
+[21:09:44][sugawy] executed "START SERVER"
+[21:52:15][sugawy] executed "STOP SERVER"

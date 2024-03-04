@@ -8,11 +8,10 @@
         "id": "sugawy",
         "identifier": "fivem:4603903",
         "data": {
-          "sub": "5df449b981f1e1e3f28e6540981dc59e",
-          "nameid": "https://forum.cfx.re/internal/user/4603903",
           "name": "sugawy",
-          "picture": "https://forum.cfx.re/user_avatar/forum.cfx.re/sugawy/256/4086033_2.png",
-          "profile": "https://forum.cfx.re/u/sugawy"
+          "profile": "https://forum.cfx.re/u/sugawy",
+          "nameid": "https://forum.cfx.re/internal/user/4603903",
+          "picture": "https://forum.cfx.re/user_avatar/forum.cfx.re/sugawy/256/4086033_2.png"
         }
       }
     },

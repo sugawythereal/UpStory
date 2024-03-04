@@ -39,6 +39,8 @@ local Webhooks = {
     ['house'] = '',
     ['qbjobs'] = '',
     ['pshousing'] = 'https://discord.com/api/webhooks/1209219887692648550/0T7HTKiRkzx6rOy3-YSU8TJvNFJaLhAMi2GKF2pV0vK9HJEmQvDBVXb5wLxurCnfwNHs',
+    ['ps-adminmenu'] = 'https://discord.com/api/webhooks/1209219887692648550/0T7HTKiRkzx6rOy3-YSU8TJvNFJaLhAMi2GKF2pV0vK9HJEmQvDBVXb5wLxurCnfwNHs'
+
 }
 
 local colors = { -- https://www.spycolor.com/

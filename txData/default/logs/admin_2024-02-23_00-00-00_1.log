@@ -1,0 +1,20 @@
+
+================================================================
+======== txAdmin v6.0.2 atop fxserver 7290 Starting - 23/02/2024, 14:53:05
+================================================================
+
+================================================================
+======== Log Rotated - 23/02/2024, 14:53:05                     
+================================================================
+[14:55:15][sugawy] logged in from 127.0.0.1 via citizenfx
+[15:06:38][sugawy] logged in via in-game ui
+[15:18:29][sugawy] executed "ensure "ps-realtor""
+[15:25:23][sugawy] executed "ensure "ps-realtor""
+[15:49:06][sugawy] executed "STOP SERVER"
+
+================================================================
+======== txAdmin v6.0.2 atop fxserver 7290 Starting - 23/02/2024, 15:58:22
+================================================================
+[16:03:22][sugawy] logged in via in-game ui
+[16:13:24][sugawy] logged in from 127.0.0.1 via citizenfx
+[16:13:27][sugawy] executed "STOP SERVER"

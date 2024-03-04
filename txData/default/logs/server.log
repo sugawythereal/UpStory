@@ -1,27 +1,75 @@
 
 ================================================================
-======== txAdmin Starting - 22/02/2024, 16:29:22                
+======== txAdmin Starting - 04/03/2024, 16:06:42                
 ================================================================
 
 ================================================================
-======== Log Rotated - 22/02/2024, 16:29:22                     
+======== Log Rotated - 04/03/2024, 16:06:43                     
 ================================================================
-[16:32:50] txAdmin: Logger started
-[16:44:24] [eEetk#1] sugaa: joined with identifiers [steam:11000010dd3b881; license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139; discord:148449302577020928; fivem:4603903; license2:7c968a6ca134a57f23abba5f0b3d153f704a6bc7]
-[16:49:54] [eEetk#1] sugaa: disconnected (Exiting)
-[16:51:47] [eEetk#2] sugaa: joined with identifiers [steam:11000010dd3b881; license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139; discord:148449302577020928; fivem:4603903; license2:7c968a6ca134a57f23abba5f0b3d153f704a6bc7]
-[16:59:48] [eEetk#2] sugaa: disconnected (Exiting)
-[17:01:09] [eEetk#3] sugaa: joined with identifiers [steam:11000010dd3b881; license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139; discord:148449302577020928; fivem:4603903; license2:7c968a6ca134a57f23abba5f0b3d153f704a6bc7]
-[17:18:22] [eEetk#3] sugaa: said "/tcx"
-[17:19:39] [eEetk#3] sugaa: triggered wild attack on [#3] sugaa
-[17:20:22] [eEetk#3] sugaa: healed player [#3] sugaa
-[17:21:47] [eEetk#3] sugaa: disconnected (Exiting)
-[17:22:18] [eEetk#4] sugaa: joined with identifiers [steam:11000010dd3b881; license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139; discord:148449302577020928; fivem:4603903; license2:7c968a6ca134a57f23abba5f0b3d153f704a6bc7]
-[17:26:38] [eEetk#4] sugaa: disconnected (Exiting)
+[16:08:17] txAdmin: Logger started
+[16:10:15] [eHLbF#1] sugaa: joined with identifiers [steam:11000010dd3b881; license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139; discord:148449302577020928; fivem:4603903; license2:7c968a6ca134a57f23abba5f0b3d153f704a6bc7]
+[16:11:50] [eHLbF#1] sugaa: enabled noclip
+[16:12:00] [eHLbF#1] sugaa: became mortal (standard mode)
+[16:17:10] [eHLbF#1] sugaa: disconnected (Exiting)
+[16:35:35] txAdmin: Logger started
+[16:37:07] [y4Dxb#1] sugaa: joined with identifiers [steam:11000010dd3b881; license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139; discord:148449302577020928; fivem:4603903; license2:7c968a6ca134a57f23abba5f0b3d153f704a6bc7]
+[16:39:34] [y4Dxb#1] sugaa: enabled noclip
+[16:40:09] [y4Dxb#2] FeN1Xd: joined with identifiers [steam:110000113332194; license:dad00e788810fe1b1ab11799b64cb2c821691581; xbl:2535442122755032; live:844428484769838; discord:410026081450459137; fivem:421882; license2:67dfa5266bdf7f508b302afa47fd9ce2b6e12baf]
+[16:40:10] [y4Dxb#1] sugaa: became mortal (standard mode)
+[16:40:40] [y4Dxb#1] sugaa: enabled noclip
+[16:40:45] [y4Dxb#1] sugaa: became mortal (standard mode)
+[16:46:34] [y4Dxb#2] FeN1Xd: died from suicide (Falling)
+[16:46:47] [y4Dxb#1] sugaa: enabled noclip
+[16:46:49] [y4Dxb#1] sugaa: became mortal (standard mode)
+[16:47:09] [y4Dxb#1] sugaa: enabled noclip
+[16:47:13] [y4Dxb#1] sugaa: became mortal (standard mode)
+[16:48:09] [y4Dxb#1] sugaa: said "/noclip"
+[16:50:42] [y4Dxb#3] New: joined with identifiers [steam:1100001444ceead; license:f0914631fc045d0324a092b1f79a9616ccb23495; xbl:2535435722807789; live:1055518299041969; discord:962069980847960085; fivem:4788245; license2:f0914631fc045d0324a092b1f79a9616ccb23495]
+[16:50:50] [y4Dxb#1] sugaa: disconnected (Exiting)
+[16:52:36] [y4Dxb#4] sugaa: joined with identifiers [steam:11000010dd3b881; license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139; discord:148449302577020928; fivem:4603903; license2:7c968a6ca134a57f23abba5f0b3d153f704a6bc7]
+[16:53:17] [y4Dxb#3] New: said "/clothing"
+[16:57:08] [y4Dxb#4] sugaa: disconnected (Couldn't start resource qb-multicharacter.)
+[16:57:09] [y4Dxb#3] New: disconnected (Couldn't start resource qb-multicharacter.)
+[16:57:09] [y4Dxb#2] FeN1Xd: disconnected (Couldn't start resource qb-multicharacter.)
+[17:01:06] txAdmin: Logger started
+[17:02:55] [DDEwA#1] New: joined with identifiers [steam:1100001444ceead; license:f0914631fc045d0324a092b1f79a9616ccb23495; xbl:2535435722807789; live:1055518299041969; discord:962069980847960085; fivem:4788245; license2:f0914631fc045d0324a092b1f79a9616ccb23495]
+[17:03:22] [DDEwA#2] sugaa: joined with identifiers [steam:11000010dd3b881; license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139; discord:148449302577020928; fivem:4603903; license2:7c968a6ca134a57f23abba5f0b3d153f704a6bc7]
+[17:04:01] [DDEwA#3] FeN1Xd: joined with identifiers [steam:110000113332194; license:dad00e788810fe1b1ab11799b64cb2c821691581; xbl:2535442122755032; live:844428484769838; discord:410026081450459137; fivem:421882; license2:67dfa5266bdf7f508b302afa47fd9ce2b6e12baf]
+[17:04:51] [DDEwA#3] FeN1Xd: disconnected (Exiting)
+[17:05:06] [DDEwA#2] sugaa: disconnected (Exiting)
+[17:05:08] [DDEwA#1] New: disconnected (Exiting)
+[17:05:44] [DDEwA#4] sugaa: joined with identifiers [steam:11000010dd3b881; license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139; discord:148449302577020928; fivem:4603903; license2:7c968a6ca134a57f23abba5f0b3d153f704a6bc7]
+[17:05:53] [DDEwA#5] New: joined with identifiers [steam:1100001444ceead; license:f0914631fc045d0324a092b1f79a9616ccb23495; xbl:2535435722807789; live:1055518299041969; discord:962069980847960085; fivem:4788245; license2:f0914631fc045d0324a092b1f79a9616ccb23495]
+[17:05:58] [DDEwA#6] FeN1Xd: joined with identifiers [steam:110000113332194; license:dad00e788810fe1b1ab11799b64cb2c821691581; xbl:2535442122755032; live:844428484769838; discord:410026081450459137; fivem:421882; license2:67dfa5266bdf7f508b302afa47fd9ce2b6e12baf]
+[17:07:19] [DDEwA#6] FeN1Xd: disconnected (Exiting)
+[17:07:23] [DDEwA#4] sugaa: disconnected (Exiting)
+[17:07:25] [DDEwA#5] New: disconnected ([txAdmin] Server restarting (requested by sugawy).)
+[17:10:28] txAdmin: Logger started
+[17:11:29] [tYfgX#1] sugaa: joined with identifiers [steam:11000010dd3b881; license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139; discord:148449302577020928; fivem:4603903; license2:7c968a6ca134a57f23abba5f0b3d153f704a6bc7]
+[17:22:54] [tYfgX#1] sugaa: said "/tx~"
+[17:22:56] [tYfgX#1] sugaa: enabled noclip
+[17:23:04] [tYfgX#1] sugaa: became mortal (standard mode)
+[17:23:21] [tYfgX#1] sugaa: enabled noclip
+[17:23:29] [tYfgX#1] sugaa: became mortal (standard mode)
+[17:46:04] [tYfgX#1] sugaa: disconnected (Exiting)
+[17:46:39] txAdmin: Logger started
+[17:53:46] txAdmin: Logger started
+[17:54:22] [cye4L#1] sugaa: joined with identifiers [steam:11000010dd3b881; license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139; discord:148449302577020928; fivem:4603903; license2:7c968a6ca134a57f23abba5f0b3d153f704a6bc7]
+[17:56:13] [cye4L#1] sugaa: disconnected (Exiting)
+[17:56:46] [cye4L#2] sugaa: joined with identifiers [steam:11000010dd3b881; license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139; discord:148449302577020928; fivem:4603903; license2:7c968a6ca134a57f23abba5f0b3d153f704a6bc7]
+[18:01:34] [cye4L#2] sugaa: disconnected (Exiting)
 
 ================================================================
-======== txAdmin Starting - 22/02/2024, 18:40:05                
+======== txAdmin Starting - 04/03/2024, 19:46:53                
 ================================================================
-[18:43:26] txAdmin: Logger started
-[18:44:18] [CNDLw#1] sugaa: joined with identifiers [steam:11000010dd3b881; license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139; discord:148449302577020928; fivem:4603903; license2:7c968a6ca134a57f23abba5f0b3d153f704a6bc7]
-[18:57:07] [CNDLw#1] sugaa: said "/houding"
+[19:47:04] txAdmin: Logger started
+[19:50:01] [p8eCB#1] sugaa: joined with identifiers [steam:11000010dd3b881; license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139; discord:148449302577020928; fivem:4603903; license2:7c968a6ca134a57f23abba5f0b3d153f704a6bc7]
+[19:52:29] [p8eCB#1] sugaa: disconnected (Exiting)
+[19:52:59] txAdmin: Logger started
+[19:53:19] [8RbVX#1] sugaa: joined with identifiers [steam:11000010dd3b881; license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139; discord:148449302577020928; fivem:4603903; license2:7c968a6ca134a57f23abba5f0b3d153f704a6bc7]
+[19:56:08] [8RbVX#1] sugaa: disconnected (Exiting)
+[20:00:38] txAdmin: Logger started
+[20:01:17] [4EaUg#1] sugaa: joined with identifiers [steam:11000010dd3b881; license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139; discord:148449302577020928; fivem:4603903; license2:7c968a6ca134a57f23abba5f0b3d153f704a6bc7]
+[20:14:09] [4EaUg#1] sugaa: disconnected (Exiting)
+[20:14:27] [4EaUg#2] sugaa: joined with identifiers [steam:11000010dd3b881; license:d1fabd5c6707fdb5ad9f4d6adc03d5b10d7fb139; discord:148449302577020928; fivem:4603903; license2:7c968a6ca134a57f23abba5f0b3d153f704a6bc7]
+[20:15:34] [4EaUg#2] sugaa: disconnected (Exiting)

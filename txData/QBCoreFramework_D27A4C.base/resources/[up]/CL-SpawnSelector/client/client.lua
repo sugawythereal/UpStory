@@ -9,7 +9,7 @@ local disableStyleChanges = false
 local isNew = false
 
 local skyCamera = nil
-
+ 
 local Houses = {}
 
 local apartments = {}
